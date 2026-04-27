@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding:30px;
+}
+
+.heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size:60px;
+    font-family: "Snell Roundhand", "Brush Script MT", cursive;
+}
+
+.navbar{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    border:3px solid black;
+    padding:30px;
+    margin:0;
+
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+    font-size:30px;
+    font-weight:bold;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+.link:hover{
+    text-decoration: underline;
+    font-size: 32px;
+    color: blue;
+    transform: translateY(-10px);
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-height: 250px;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-10px); /* move up */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* shadow */
+}
+
+.brand-header{
+    grid-area: header;
+}
+
+.navbar{
+    grid-area:nav;
+}
+
+.article1{
+    grid-area :article1;
+}
+
+.article2{
+    grid-area :article2;
+}
+
+.article3{
+    grid-area :article3;
+}
+
+.article4{
+    grid-area :article4;
+}
+
+.article5{
+    grid-area :article5;
+}
+
+.page{
+    display: grid;
+    grid-template-areas: "header header header" "nav nav nav" "article1 article2 article3" "article4 article5 article5";
+}
+
+.story{
+    padding: 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+   
+}
+
+.article3, .article5{
+    border-right: 3px solid black;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 30px;
+}
